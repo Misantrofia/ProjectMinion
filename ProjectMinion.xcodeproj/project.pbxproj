@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5779E435F3194CD83FD10734 /* Pods_ProjectMinion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121EBAF53B0D718FC8D745B8 /* Pods_ProjectMinion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D19CC6581AC86AA000DF2259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D19CC6571AC86AA000DF2259 /* main.m */; };
 		D19CC65B1AC86AA000DF2259 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D19CC65A1AC86AA000DF2259 /* AppDelegate.m */; };
 		D19CC65E1AC86AA000DF2259 /* ProjectMinion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D19CC65C1AC86AA000DF2259 /* ProjectMinion.xcdatamodeld */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		121EBAF53B0D718FC8D745B8 /* Pods_ProjectMinion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectMinion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E6D97C49C82E4F70428056 /* Pods-ProjectMinion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMinion.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMinion/Pods-ProjectMinion.release.xcconfig"; sourceTree = "<group>"; };
 		D19CC6521AC86AA000DF2259 /* ProjectMinion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMinion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19CC6561AC86AA000DF2259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19CC6571AC86AA000DF2259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		D19CC66E1AC86AA000DF2259 /* ProjectMinionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectMinionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19CC6731AC86AA000DF2259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D19CC6741AC86AA000DF2259 /* ProjectMinionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectMinionTests.m; sourceTree = "<group>"; };
+		FA35457062914D773E590862 /* Pods-ProjectMinion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMinion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMinion/Pods-ProjectMinion.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5779E435F3194CD83FD10734 /* Pods_ProjectMinion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +67,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FB26939C947F95334A5E994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				121EBAF53B0D718FC8D745B8 /* Pods_ProjectMinion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5EF9A0FDDF16A06B8343FE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA35457062914D773E590862 /* Pods-ProjectMinion.debug.xcconfig */,
+				68E6D97C49C82E4F70428056 /* Pods-ProjectMinion.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D19CC6491AC86AA000DF2259 = {
 			isa = PBXGroup;
 			children = (
 				D19CC6541AC86AA000DF2259 /* ProjectMinion */,
 				D19CC6711AC86AA000DF2259 /* ProjectMinionTests */,
 				D19CC6531AC86AA000DF2259 /* Products */,
+				A5EF9A0FDDF16A06B8343FE4 /* Pods */,
+				3FB26939C947F95334A5E994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D19CC6781AC86AA000DF2259 /* Build configuration list for PBXNativeTarget "ProjectMinion" */;
 			buildPhases = (
+				9FD037F6AAE4D4BC604F0453 /* Check Pods Manifest.lock */,
 				D19CC64E1AC86AA000DF2259 /* Sources */,
 				D19CC64F1AC86AA000DF2259 /* Frameworks */,
 				D19CC6501AC86AA000DF2259 /* Resources */,
+				3C37BDC45BA3DD971D22F23D /* Embed Pods Frameworks */,
+				87CAF2F91ABEE472EBDD4AD2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +244,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C37BDC45BA3DD971D22F23D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectMinion/Pods-ProjectMinion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87CAF2F91ABEE472EBDD4AD2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectMinion/Pods-ProjectMinion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD037F6AAE4D4BC604F0453 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D19CC64E1AC86AA000DF2259 /* Sources */ = {
@@ -348,6 +423,7 @@
 		};
 		D19CC6791AC86AA000DF2259 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA35457062914D773E590862 /* Pods-ProjectMinion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: alex schwartz (ZKZ2XL438V)";
@@ -362,6 +438,7 @@
 		};
 		D19CC67A1AC86AA000DF2259 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E6D97C49C82E4F70428056 /* Pods-ProjectMinion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

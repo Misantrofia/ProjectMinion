@@ -1,0 +1,6 @@
+framework module Pods_ProjectMinion {
+  umbrella header "Pods-ProjectMinion-umbrella.h"
+
+  export *
+  module * { export * }
+}
